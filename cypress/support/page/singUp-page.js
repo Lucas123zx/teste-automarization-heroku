@@ -30,7 +30,7 @@ export class SingUpPage {
   }
 
   clicarBotaoCreate() {
-    cy.clickRecaptcha();
+    cy.solveGoogleReCAPTCHA();
     cy.get(singUpElements.buttonCreateAccount()).click()
   }
 
